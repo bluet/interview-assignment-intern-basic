@@ -35,7 +35,7 @@
 4. Crawler - 4 days
     - 抓取頁面 [很厲害的頁面](https://github.com/bluet/interview-assignment-intern-basic/blob/master/README.md)
     - 取出由 README.md 宣染成 html 的部份
-    - 存檔 `子目錄名稱/頁面當按名稱-epoch時間.檔案格式` ，例 `abc/README-1234567890.html`
+    - 存檔 `子目錄名稱/頁面當按名稱-epoch時間（單位 ms）.檔案格式` ，例 `abc/README-1585469575123.html`
     - 分析頁面內容產生一個 json 存為 `子目錄名稱/頁面名稱-epoch時間.檔案格式.json`
     ```
     {
@@ -69,5 +69,4 @@
             |-> paragraph2 content
         ...
     ```
-    - 繼續爬下一層，只要一層就好
   
