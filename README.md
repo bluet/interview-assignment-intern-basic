@@ -26,12 +26,12 @@
 2. 細胞自動機 Cellular automaton - 2 days
     - [細胞自動機 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E7%B4%B0%E8%83%9E%E8%87%AA%E5%8B%95%E6%A9%9F)
     - [康威生命遊戲 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F)
-3. RESTful API server - 3 days
-    - 有預設 admin 帳號，可新增、顯示、修改使用者資料
+3. RESTful API server - 5 days
     - 新使用者可透過 API 註冊、更新自己資料
     - 使用者可以新增修改刪除自己的寵物
-    - admin 可以新增修改刪除所有人的寵物
-4. Crawler - 4 days
+    - 附上 OpenAPI (Swagger) yaml 檔
+        - 可以用這個產生 [Swagger Editor](https://swagger.io/tools/swagger-editor/) or [Online Swagger Editor](https://editor.swagger.io/)
+4. Crawler - 5 days
     - 抓取頁面 [很厲害的頁面](https://github.com/bluet/interview-assignment-intern-basic/blob/master/README.md)
     - 取出由 README.md 宣染成 html 的部份
     - 存檔 `子目錄名稱/頁面當按名稱-epoch時間（單位 ms）.檔案格式` ，例 `abc/README-1585469575123.html`
