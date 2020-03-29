@@ -2,7 +2,8 @@
 實習生面試前作業（基本題）
 
 ## 流程
-1. 請 Fork 這個 repo 到自己的帳號下，然後將自己的 repo 設為 private，請勿公開自己的答案
+1. 請複製這個 repo 到自己的帳號下，然後將自己的 repo 設為 private，請勿公開自己的答案
+    - [Duplicating a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
 2. 邀請我成為 collaborator
 3. 開始開發，嘗試看看寫出自己最滿意的版本
 4. 每一題題目做完後用 telegram 告訴我，並附上鍊結
