@@ -5,15 +5,16 @@
 1. 請複製這個 repo 到自己的帳號下，然後將自己的 repo 設為 private，請勿公開自己的答案
     - [Duplicating a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
 2. 邀請我成為 collaborator
-3. 開始開發，嘗試看看寫出自己最滿意的版本
-4. 每一題題目做完後用 telegram 告訴我，並附上鍊結
-    - https://t.me/BlueT_Lien
+3. 每個題目分別開 branch 並建立 Pull Request
+    - 開始開發，嘗試看看寫出自己最滿意的版本
+    - 每一題題目做完後在 Pull Request 中 tag 我並簡述開發狀況、心得（請勿自行 merge）
+4. 全都完成後，請將自己加入 [英雄榜](https://github.com/bluet/interview-assignment-intern-basic/blob/master/heros.md)
 
 ## 內容
 - 每一題分別開子目錄，以題號開頭。例： `1-1a2b/`
 - 請包含專案需要的基本檔案，比如 .gitignore 和 README 等等任何所需檔案
 - README 裡須將執行方法說明清楚
-- 每個題目分別開 branch ，寫完後用 merge branch 的方式整合回 master
+
 
 ## 其他規定
 - 須能在 Ubuntu Linux 18.04 64bit Desktop 環境執行
