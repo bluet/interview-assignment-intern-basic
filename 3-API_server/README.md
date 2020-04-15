@@ -10,7 +10,7 @@ Swagger yaml 檔案位置為：`./swagger.yaml`
 
 # 執行畫面
 
-[View on asciinema](https://asciinema.org/a/J9pgG2JRN5qlTopPi4ASblRNQ)
+[View on asciinema](https://asciinema.org/a/320375)
 
 # API 相關使用
 
