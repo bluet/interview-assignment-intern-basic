@@ -8,4 +8,4 @@
 
 執行畫面：
 
-[View on asciinema](https://asciinema.org/a/tdebf3JxvHmiA7WRZcjfmW88g)
+[View on asciinema](https://asciinema.org/a/320370)
