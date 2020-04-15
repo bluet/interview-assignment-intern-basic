@@ -1,0 +1,27 @@
+{
+  "name": "3-API_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.6",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js --fix",
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,282 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "BT is cool.",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/account": {
+            "get": {
+                "description": "取得用戶資料",
+                "tags": [
+                    "account"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "回應用戶 username, email"
+                    },
+                    "403": {
+                        "description": "尚未登入，無法取得"
+                    },
+                    "500": {
+                        "description": "伺服器錯誤"
+                    }
+                },
+                "security": [
+                    {
+                        "jwt": []
+                    }
+                ]
+            },
+            "post": {
+                "description": "註冊用戶",
+                "tags": [
+                    "account"
+                ],
+                "parameters": [
+                    {
+                        "name": "username",
+                        "description": "使用者名稱",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "description": "使用者密碼",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "description": "使用者電子郵件",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "成功註冊用戶"
+                    },
+                    "403": {
+                        "description": "尚未登入，無法取得"
+                    },
+                    "500": {
+                        "description": "伺服器錯誤"
+                    }
+                }
+            },
+            "put": {
+                "description": "修改使用者電子郵件",
+                "tags": [
+                    "account"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "description": "欲更新之電子郵件",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "更新成功"
+                    },
+                    "400": {
+                        "description": "電子郵件欄位為空"
+                    },
+                    "500": {
+                        "description": "伺服器錯誤"
+                    }
+                },
+                "security": [
+                    {
+                        "jwt": []
+                    }
+                ]
+            }
+        },
+        "/login": {
+            "post": {
+                "description": "登入帳戶",
+                "tags": [
+                    "login"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "username",
+                        "description": "使用者名稱.",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "description": "使用者密碼.",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "登入",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "400": {
+                        "description": "資料有誤",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "500": {
+                        "description": "伺服器錯誤",
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/pet": {
+            "get": {
+                "description": "取得用戶寵物",
+                "tags": [
+                    "pet"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "成功"
+                    },
+                    "400": {
+                        "description": "用戶尚未設定寵物"
+                    }
+                },
+                "security": [
+                    {
+                        "jwt": []
+                    }
+                ]
+            },
+            "post": {
+                "description": "設定使用者寵物",
+                "tags": [
+                    "pet"
+                ],
+                "parameters": [
+                    {
+                        "name": "pet",
+                        "description": "設定寵物名稱",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "設定成功"
+                    },
+                    "400": {
+                        "description": "未帶有寵物參數"
+                    },
+                    "500": {
+                        "description": "伺服器錯誤"
+                    }
+                }
+            },
+            "put": {
+                "description": "更新使用者寵物",
+                "tags": [
+                    "pet"
+                ],
+                "parameters": [
+                    {
+                        "name": "pet",
+                        "description": "修改寵物之名稱",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "更新成功"
+                    },
+                    "400": {
+                        "description": "該使用者未設有寵物，無法更新"
+                    },
+                    "500": {
+                        "description": "伺服器錯誤"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Account": {
+            "properties": {
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "Login": {
+            "required": [
+                "username",
+                "password"
+            ],
+            "properties": {
+                "username": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "pet": {
+            "properties": {
+                "pet": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "jwt": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "components": {},
+    "tags": [
+        {
+            "name": "account",
+            "description": "帳戶資訊相關"
+        },
+        {
+            "name": "login",
+            "description": "使用者登入"
+        },
+        {
+            "name": "pet",
+            "description": "用戶寵物相關"
+        }
+    ]
+}
