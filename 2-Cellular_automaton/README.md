@@ -8,7 +8,7 @@
     
 執行畫面：
 
-[View on asciinema](https://asciinema.org/a/jE3tJrCFHas8A04DUElpxxtyI)
+[View on asciinema](https://asciinema.org/a/320373)
 
 # 提示
 
