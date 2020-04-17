@@ -71,4 +71,25 @@
             |-> paragraph2 content
         ...
     ```
-  
+
+## Coding
+
+### Code Quality
+
+Please install these vscode extension:
+- ESLint https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+- sonarlint https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode
+- flow https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
+
+and add these file into your code workspace root:
+- flow config https://github.com/bluet/interview-assignment-intern-basic/blob/master/.flowconfig
+- eslint https://github.com/bluet/interview-assignment-intern-basic/blob/master/.eslintrc.js
+
+### Collaboration
+- GitLens https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+- VS Live Share Extension Pack https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack
+
+### Tools
+- Prettier  https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+ 
