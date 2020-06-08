@@ -10,3 +10,5 @@
 
 [strict]
 
+[untyped]
+.*/node_modules/*
