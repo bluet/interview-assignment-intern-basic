@@ -1,18 +1,20 @@
 module.exports = {
-	env: {
-		"es6": true,
+	"env": {
+		"es2020": true,
 		"node": true,
 		"browser": true,
-		"es2020": true,
-		"mongo": true,
 		"shared-node-browser": true,
+		"mocha": true,
+		"jest": true,
+		"mongo": true,
 	},
-	extends: "eslint:recommended",
-	parserOptions: {
+	"extends": "eslint:recommended",
+	"parserOptions": {
 		ecmaVersion: 11,
 		sourceType: "module",
 	},
-	rules: {
+	"parser": "babel-eslint",
+	"rules": {
 		"indent": [
 			"error",
 			"tab",
@@ -65,5 +67,6 @@ module.exports = {
 		"arrow-spacing": "error",
 		"prefer-arrow-callback": "warn",
 		"require-await": "error",
+		"operator-linebreak": ["warn", "before"],
 	},
 };
