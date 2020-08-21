@@ -1,5 +1,5 @@
 module.exports = {
-	"env": {
+	env: {
 		"es2020": true,
 		"node": true,
 		"browser": true,
@@ -8,13 +8,13 @@ module.exports = {
 		"jest": true,
 		"mongo": true,
 	},
-	"extends": "eslint:recommended",
-	"parserOptions": {
+	extends: "eslint:recommended",
+	parserOptions: {
 		ecmaVersion: 11,
 		sourceType: "module",
 	},
-	"parser": "babel-eslint",
-	"rules": {
+	parser: "babel-eslint",
+	rules: {
 		"indent": [
 			"error",
 			"tab",
@@ -24,7 +24,14 @@ module.exports = {
 		],
 		"linebreak-style": ["error", "unix"],
 		"curly": "error",
-		"quotes": ["error", "double"],
+		"quotes": [
+			"warn",
+			"double",
+			{
+				avoidEscape: true,
+				allowTemplateLiterals: true,
+			},
+		],
 		"semi": ["error", "always"],
 		"no-console": [
 			"warn",
