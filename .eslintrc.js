@@ -75,5 +75,6 @@ module.exports = {
 		"prefer-arrow-callback": "warn",
 		"require-await": "error",
 		"operator-linebreak": ["warn", "before"],
+		"no-constant-condition": ["error", { "checkLoops": false }]
 	},
 };
