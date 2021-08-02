@@ -75,6 +75,10 @@ module.exports = {
 		"prefer-arrow-callback": "warn",
 		"require-await": "error",
 		"operator-linebreak": ["warn", "before"],
-		"no-constant-condition": ["error", { "checkLoops": false }]
+		"no-constant-condition": ["error", { "checkLoops": false }],
+		"no-throw-literal": "warn",
+		"keyword-spacing": ["error", { "after": true, "before": true }],
+		"space-before-blocks": "error",
+		"no-multi-spaces": "error",
 	},
 };
