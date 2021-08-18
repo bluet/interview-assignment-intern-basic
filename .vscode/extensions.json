@@ -26,7 +26,6 @@
                 "eg2.vscode-npm-script",
                 "christian-kohler.npm-intellisense",
                 "christian-kohler.path-intellisense",
-                "esbenp.prettier-vscode",
                 "ms-vscode-remote.remote-containers",
                 "ms-vscode-remote.remote-ssh",
                 "ms-vscode-remote.remote-ssh-edit",
@@ -35,6 +34,7 @@
                 "tabnine.tabnine-vscode",
                 "gruntfuggly.todo-tree",
                 "visualstudioexptteam.vscodeintellicode",
-                "snyk-security.vscode-vuln-cost"
+                "rvest.vs-code-prettier-eslint",
+                "redhat.fabric8-analytics"
         ]
 }

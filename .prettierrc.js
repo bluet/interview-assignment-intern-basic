@@ -7,4 +7,5 @@ module.exports = {
 	bracketSpacing: true,
 	arrowParens: "always",
 	semi: true,
+	printWidth: 120,
 };
