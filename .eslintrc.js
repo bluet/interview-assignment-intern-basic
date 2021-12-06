@@ -4,7 +4,6 @@ module.exports = {
 		"node": true,
 		"browser": true,
 		"shared-node-browser": true,
-		"mocha": true,
 		"jest": true,
 		"mongo": true,
 	},
@@ -12,8 +11,9 @@ module.exports = {
 	"parserOptions": {
 		"ecmaVersion": 11,
 		"sourceType": "module",
+		"requireConfigFile": false,
 	},
-	"parser": "babel-eslint",
+	"parser": "@babel/eslint-parser",
 	"rules": {
 		"indent": ["error", "tab", { "VariableDeclarator": "first" }],
 		"linebreak-style": ["error", "unix"],
