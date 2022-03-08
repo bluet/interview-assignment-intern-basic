@@ -11,4 +11,6 @@
 [strict]
 
 [untyped]
-.*/node_modules/*
+
+[declarations]
+.*/node_modules/.*
